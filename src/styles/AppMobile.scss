@@ -1,0 +1,40 @@
+@media all and (max-width: 600px) {
+    #root {
+        img {
+            width: 30vw;
+        }
+
+        .shop {
+            grid-template-columns: 60% 40%;
+        }
+
+        .productsTitle {
+            grid-column: span;
+        }
+
+        .itemGroup {
+            grid-column: span 3;
+        }
+
+        .cartItem {
+            grid-template-columns: 100%;
+            justify-items: center;
+            margin-bottom: 2vh;
+            padding-bottom: 1vh;
+        }
+
+        .cartItemImg {
+            max-width: 20vw;
+        }
+
+        .cartTotalSum {
+            width: 30%;
+        }
+
+        .xButton {
+            order: 1;
+            margin: 0;
+            width: 5vw;
+        }
+    }
+}

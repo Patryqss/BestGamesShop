@@ -1,0 +1,166 @@
+@import './Appmobile.scss';
+
+$primary-color: #383e56;
+$second-color: #f69e7b;
+$third-color: #eedad1;
+$fourth-color: #d4b5b0;
+
+@font-face {
+  font-family: Target;
+  src: url(Tarrget3DItalic.otf);
+}
+
+body {
+  text-align: center;
+  background-color: $primary-color;
+  color: $second-color;
+}
+
+img {
+  width: 15vw;
+}
+
+h1 {
+  font-family: Target;
+  font-size: 6vw;
+  background: url(https://gamingcollegian.org/wp-content/uploads/2020/03/God-of-War.png);
+  background-position: center;
+  margin: 0;
+  padding: 5vw;
+}
+
+.shop {
+  display: grid;
+  grid-template-columns: 70% 30%;
+
+  .section {
+    border: 3px $fourth-color solid;
+    border-radius: 5px;
+    padding-bottom: 10vh;
+  }
+  
+  .products {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: end;
+    row-gap: 5vh;
+    margin-right: 1px;
+
+    :last-child {
+      grid-column: 2;
+    }
+
+    .productsTitle {
+      grid-column: span 3;
+      font-family: Target;
+      font-size: 4vw;
+      font-weight: bold;
+    }
+
+    .title {
+      font-size: large;
+      font-weight: 700;
+    }
+
+    .green {
+      color: $fourth-color
+    }
+
+    .red {
+      color: red;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+  }
+
+  .cart {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    margin-right: 1px;
+
+    .cartTitle {
+      font-family: Target;
+      font-size: 4vw;
+      font-weight: bold;
+    }
+
+    .cartItem {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      align-items: center;
+      margin: 0.5vw;
+      border: solid 1px $third-color;
+      padding-right: 1vw;
+    }
+
+    .cartItemImg {
+      grid-row: span 2;
+      max-width: 10vw;
+    }
+
+    .cartItemTitle {
+      margin: 0;
+      align-self: end;
+      font-weight: bold;
+    }
+
+    .cartItemCost{
+      margin: 0;
+      align-self: baseline;
+      font-style: italic;
+    }
+
+    .cartEmpty {
+      font-style: italic;
+      font-size: large;
+    }
+
+    .cartTotalSum {
+      position: fixed;
+      margin-left: 2vw;
+      border: 1px solid;
+      bottom: 0.1em;
+      width: 25%;
+      padding: 3px;
+      font-size: x-large;
+      font-weight: bold;
+      background-color: $primary-color;
+    }
+  }
+}
+
+.button {
+  -moz-box-shadow: 3px 4px 0px 0px $fourth-color;
+  -webkit-box-shadow: 3px 4px 0px 0px $fourth-color;
+  box-shadow: 3px 4px 0px 0px $fourth-color;
+  background-color: $third-color;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  border:1px solid $second-color;
+  cursor:pointer;
+  color:$primary-color;
+  font-weight:bold;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #528ecc;
+  width: 60%;
+  margin-left: 20%;
+  padding: 0.1em;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  &:hover {
+    background-color:$second-color;
+  }
+}
+
+.xButton {
+  border-radius: 10px;
+  font-weight: 900;
+  grid-row: span 2;
+}
