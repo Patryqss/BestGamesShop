@@ -1,7 +1,10 @@
 {
-  "name": "shoppingcart",
-  "version": "0.1.0",
+  "name": "bestgamesshop",
+  "version": "1.0.0",
   "private": true,
+  "devDependencies": {
+    "prettier": "1.18.2"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -18,7 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier --ignore-path .gitignore --write \"./**/*.{js,json,jsx,css,scss,html}\""
   },
   "eslintConfig": {
     "extends": "react-app"

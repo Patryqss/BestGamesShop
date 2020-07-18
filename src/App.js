@@ -5,12 +5,11 @@ import Products from './components/products';
 import Cart from './components/cart';
 
 class App extends Component {
-
   render() {
     return (
       <div className="App">
         <h1>Best Games Shop</h1>
-        <div className='shop'>
+        <div className="shop">
           <Products />
           <Cart />
         </div>
